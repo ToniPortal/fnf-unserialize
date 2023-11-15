@@ -3,7 +3,13 @@ const fs = require('fs');
 
 exports.create = function (nameofweek) {
 
-    week(nameofweek);
+    try {
+    
+        week(nameofweek);
+
+    } catch (e) {
+        console.warn(`[FNF] The name you set not found !\n`, e)
+    }
 
 
 }

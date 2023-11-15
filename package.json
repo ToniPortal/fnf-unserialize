@@ -1,6 +1,6 @@
 {
-  "name": "@bouftout/discord-exp-mysql",
-  "version": "1.1.2",
+  "name": "@toniportal/fnf-unserialize",
+  "version": "1.0.0",
   "description": "A module using discord.js and canvas that allows you to easily make an experience system for your discord bot.",
   "main": "index.js",
   "scripts": {
@@ -8,18 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bouftout/discord-exp-mysql.git"
+    "url": "git+https://github.com/toniportal/discord-exp-mysql.git"
   },
   "keywords": [
-    "discord",
-    "exp",
-    "discord-exp",
-    "exp-discord",
-    "discordexperience",
-    "experience",
-    "expdiscord",
-    "discordexp",
-    "experiencediscord"
+    "friday night funkin",
+    "fnf",
+    "fnfunserialize"
   ],
   "author": "ToniPortal",
   "license": "MIT",
@@ -27,7 +21,7 @@
     "mysql": "^2.18.1"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/",
+    "registry": "https://npm.pkg.github.com/",
     "access": "public"
   }
 }

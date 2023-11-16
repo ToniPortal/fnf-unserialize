@@ -1,10 +1,11 @@
-const fs = require('fs');
+const fs = require('fs'),
+    path = require('path');
 
 
 exports.create = function (nameofweek) {
 
     try {
-    
+
         week(nameofweek);
 
     } catch (e) {
@@ -80,20 +81,21 @@ function week(dataname) {
         Reflect.__name__ = true;
         class Test {
             static main() {
-                let s = fs.readFileSync(`${process.env.APPDATA}/ShadowMario/${dataname}/ninjamuffin99/funkin.sol`);
+                let s = fs.readFileSync((path.resolve(__dirname, `${dataname}`, 'funkin.sol')), 'utf8');
+                console.log((path.resolve(__dirname, `${dataname}`, 'funkin.sol')));
                 //let s = "oy11:timeBarTypey11:Time%20Lefty11:comboOffsetazzzzhy8:arrowHSVaazzzhazzzhazzzhazzzhhy12:middleScrollfy9:scoreZoomty10:noteOffsetzy12:ghostTappingty14:healthBarAlphai1y12:noteSplashesty16:gameplaySettingsby12:opponentplayfy9:instakillfy11:scrollspeedi1y9:songspeedi1y7:botplayfy8:practicefy10:healthgaini1y10:scrolltypey14:multiplicativey10:healthlossi1hy10:lowQualityfy7:showFPSty10:goodWindowi90y9:frameratei144y7:noResetfy7:shadersfy10:sickWindowi45y10:downScrollfy12:ratingOffsetzy8:camZoomsty10:songRatingby8:foreplayd0.887971698113208y11:malfunctiond0.8996138996139y11:donnie-softd0.834459459459459y14:encounter-nullzy9:encounterd0.955947136563877y14:encounter-hardzy3:sexzy10:drift-easyd0.87639405204461y16:malfunction-hardzy16:donnie-soft-hardzy5:driftzy6:insaned0.854901960784314y8:aye-papid0.91304347826087y17:kagayaku-kassettod0.875y4:uhohd0.822265625y9:uhoh-hardzy22:kagayaku-kassetto-hardzy8:collapsezy11:insane-hardzy16:malfunction-easyzy10:drift-hardzhy8:flashingty10:safeFramesi10y13:henchmenDeathzy10:weekScoresby10:week9-easyzy6:week10zy10:week8-easyzy10:week9-hardzy5:week7zy11:week10-easyzy10:week8-hardzy10:week7-easyi278330y5:week8i157270y11:week10-hardzy10:week7-hardzy5:week9zhy7:hideHudfy9:badWindowi135y14:hitsoundVolumezy10:songScoresbR32i61930R33i77360R34i40520R35zR36i73500R37zR38zR39i77510R40zR41zR42zR43i71110R44i34550R45i43510R46i67800R47zR48zR49zR50zR51zR52zhy13:weekCompletedbR65tR61thy18:globalAntialiasingty15:achievementsMapby17:friday_night_playthy10:fullscreenfy13:imagesPersistfy14:controllerModefg";
                 let unserializer = new haxe_Unserializer(s);
                 let res = unserializer.unserialize();
-                fs.writeFileSync(`./data/all.json`, JSON.stringify(res));
-                fs.writeFileSync(`./data/weekscore.json`, JSON.stringify(res.weekScores));
-                fs.writeFileSync(`./data/songscore.json`, JSON.stringify(res.songScores));
+                fs.writeFileSync(`./data/all.json`, JSON.stringify(res), "utf-8");
+                // fs.writeFileSync(`./data/weekscore.json`, JSON.stringify(res.weekScores));
+                // fs.writeFileSync(`./data/songscore.json`, JSON.stringify(res.songScores));
                 // il y a res.songScores qui contient les scores
                 // il y a res.weekScores qui contient les scores par "semaine"
                 // res.songScores.forEach((item, index) => {
                 //   console.log(item);
                 // });
 
-                //console.log("Test.hx:8:",JSON.stringify(res));
+                // console.log("Test.hx:8:",JSON.stringify(res));
                 //console.log("Test.hx:9:","---");
                 //console.log("Test.hx:10:",JSON.stringify(res.weekScores));
                 //console.log("Test.hx:11:","---");

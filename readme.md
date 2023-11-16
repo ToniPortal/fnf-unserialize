@@ -21,14 +21,15 @@ npm install fnf-unserialize
 - [Bugs](https://github.com/ToniPortal/compagnioncube/issues)
 
 ## Usage
-s
-You need find on the the name here :
-**%appdata%/ShadowMario/nameofyourfnf**
+
+You need find file :
+-Psyh engine : **%appdata%/ShadowMario/nameofyourfnf**
+-Fnf : **%AppData%/Roaming/ninjamuffin99/Funkin/ninjamuffin99**
 
 ```js
 const fnf = require("fnf-serialize");
 
-fnf.create("nameofyourfnf"); //Create the json from the game
+fnf.create("%AppData%/Roaming/ninjamuffin99/Funkin/ninjamuffin99"); //Create the json from the game
 
   
 ```

@@ -1,11 +1,13 @@
 {
   "name": "fnf-unserialize",
   "version": "1.0.1",
-  "description": "A module using discord.js and canvas that allows you to easily make an experience system for your discord bot.",
+  "description": "A module for serialize data from the Friday Night Funkin Game !",
   "main": "index.js",
   "scripts": {
     "test": "nodemon test.js",
-    "publish": "npm publish --access public"
+    "start": "node test.js",
+    "upd": "npm run update",
+    "publish": "git add . && git commit -am 'cmdcommit' && npm version patch && npm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,6 @@
   "author": "ToniPortal",
   "license": "MIT",
   "dependencies": {
-    "mysql": "^2.18.1",
     "path": "^0.12.7"
   }
 }

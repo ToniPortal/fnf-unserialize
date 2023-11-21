@@ -1,0 +1,9 @@
+node_modules
+.vscode
+*.env
+.npmrc
+data/**
+does.png
+readme.node_modules
+*.tgz
+test.js

@@ -1,11 +1,11 @@
 {
-  "name": "@toniportal/fnf-unserialize",
+  "name": "fnf-unserialize",
   "version": "1.0.0",
   "description": "A module using discord.js and canvas that allows you to easily make an experience system for your discord bot.",
   "main": "index.js",
   "scripts": {
     "test": "nodemon test.js",
-    "publish": "npm publish"
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -21,9 +21,5 @@
   "dependencies": {
     "mysql": "^2.18.1",
     "path": "^0.12.7"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "access": "public"
   }
 }

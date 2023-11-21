@@ -1,14 +1,20 @@
-<h1 align="center">FNF-Serialize</h1>
+<h1 align="center">FNF-Unserialize</h1>
 
-> A module for serialize data from the Friday Night Funkin Game !
+> A module for serializing data from the Friday Night Funkin Game!
 
-[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://www.npmjs.com/package/fnf-serialize)
+<div align="center">
+  <a href="https://www.npmjs.com/package/fnf-unserialize">
+    <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/fnf-unserialize">
+  </a>
+<img alt="GitHub package.json dynamic" src="https://img.shields.io/github/package-json/keywords/ToniPortal/fnf-unserialize/master?link=https%3A%2F%2Fgithub.com%2FToniPortal%2Ffnf-unserialize%2Fblob%2Fmaster%2Fpackage.json">
+
+</div>
 
 ## Install
 
 With [npm](https://npmjs.org/) installed, run
 
-```cmd
+```bash
 npm install fnf-unserialize
 ```
 
@@ -27,33 +33,41 @@ You need find file :
 -Fnf : **%AppData%/Roaming/ninjamuffin99/Funkin/ninjamuffin99**
 
 ```js
-const fnf = require("fnf-serialize");
+const fnf = require("./index.js");
 
-fnf.create("%AppData%/Roaming/ninjamuffin99/Funkin/ninjamuffin99"); //Create the json from the game
+//Create the json from the game and return it(it parsed into js object);
+console.log(fnf.create(`${process.env.APPDATA}/ninjamuffin99/Funkin/ninjamuffin99`));
 
-  
+console.log("\n") // For have a <br> in console
+
+// Read the json created(it parsed into js object);
+var r = fnf.read();
+
+//And here you see all the song normally !(The json change verigy before !)
+console.log(r.songScores.h["Tutorial-easy"]);
+
 ```
 
 outputs
 
-![Does](./does.png)
+![Does](./do.png)
 
 ## Built With
 
 - [Node](https://nodejs.org/fr/)
 - [NPM](https://npmjs.org/)
-- [Mysql](https://www.npmjs.com/package/mysql)
+- [Path](https://www.npmjs.com/package/path)
 
 ## Future Updates
 
-- [] A  System.
+- [] If the community requests it, it will be updated !!
 
 ## Author
 
 **ToniPortal**
 
 - Contact discord **toniportal**
-- [My profile](https://github.com/ToniPortal)
+- [My Github profile](https://github.com/ToniPortal)
 - [My email for professional helping](mailto:pastre.toni?subject=Help%for%fnf-serialize)
 
 ## 🤝 Support
@@ -62,6 +76,6 @@ Feature requests are welcome!
 
 Give a ⭐️ if you like this project !
 
-## Badges  
+## License  
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/ToniPortal)  

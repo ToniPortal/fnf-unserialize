@@ -7,7 +7,8 @@
     "test": "nodemon test.js",
     "start": "node test.js",
     "upd": "npm run update",
-    "publish": "git add . && git commit -am 'cmdcommit' && npm version patch && npm publish --access public"
+    "publish": "git add . && git commit -am 'cmdcommit' && npm version patch && npm publish --access public",
+    "pub": "nb"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,9 @@
   "keywords": [
     "friday night funkin",
     "fnf",
-    "fnfunserialize"
+    "fnfunserialize",
+    "friday",
+    "friday night"
   ],
   "author": "ToniPortal",
   "license": "MIT",

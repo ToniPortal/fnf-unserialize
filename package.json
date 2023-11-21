@@ -1,6 +1,6 @@
 {
   "name": "fnf-unserialize",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A module for serialize data from the Friday Night Funkin Game !",
   "main": "index.js",
   "scripts": {
